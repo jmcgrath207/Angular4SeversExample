@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ServerElementComponent implements OnInit {
 
   /*Input make varible global to all componets*/
-  @Input() element: {type: string, name: string, content: string};
+  @Input('SrvElement') element: {type: string, name: string, content: string};
 
   constructor() { }
 
