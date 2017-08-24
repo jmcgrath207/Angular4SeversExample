@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ServerElementComponent implements OnInit {
 
-  /*Input make varible global to all componets*/
+  /*allow other components to grab variable Parent --> Child*/
   @Input('SrvElement') element: {type: string, name: string, content: string};
 
   constructor() { }

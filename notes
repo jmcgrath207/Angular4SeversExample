@@ -1,0 +1,2 @@
+Having issues with blueprintCreated on cockpit.ts emitting the event so onBlueprintAdded can catch it
+and added it too the array
