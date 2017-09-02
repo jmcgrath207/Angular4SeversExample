@@ -8,7 +8,7 @@
     <app-server-element *ngFor="let severElement of serverElements"
                         [SrvElement]="severElement"
                         [name]="severElement.name">
-      <p>
+      <p #contentParagraph>
         <strong *ngIf="severElement.type === 'server'" style="color: red">{{ severElement.content }}</strong>
         <em *ngIf="severElement.type === 'blueprint'">{{ severElement.content }}</em>
       </p>
